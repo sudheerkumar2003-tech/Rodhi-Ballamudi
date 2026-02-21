@@ -4,81 +4,91 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>KSP Manpower Services</title>
+
 <style>
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    line-height: 1.6;
 }
 
 header {
-    background: linear-gradient(135deg, #0b1c3d, #142850);
+    background: #0a1f44;
     color: white;
-    padding: 40px 20px;
+    padding: 20px 0;
     text-align: center;
 }
 
-header h1 {
-    font-size: 40px;
-    margin: 0;
+nav {
+    background: #132c5c;
+    padding: 10px;
+    text-align: center;
 }
 
-header p {
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
     color: gold;
-    font-size: 18px;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d');
+    background-size: cover;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
 }
 
 section {
     padding: 50px 20px;
-    text-align: center;
+    max-width: 1100px;
+    margin: auto;
 }
 
-.services {
-    background-color: #0b1c3d;
-    color: white;
+.services, .why {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.services h2 {
-    color: gold;
-}
-
-.service-box {
-    display: inline-block;
-    width: 250px;
-    margin: 20px;
+.box {
+    flex: 1;
+    min-width: 250px;
+    background: #f4f4f4;
     padding: 20px;
-    border: 1px solid gold;
-    border-radius: 10px;
+    border-radius: 8px;
+    text-align: center;
 }
 
 .contact {
-    background-color: #142850;
-    color: white;
+    background: #f9f9f9;
 }
 
-.contact h2 {
-    color: gold;
+button {
+    background: gold;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #d4af37;
 }
 
 footer {
-    background-color: #0b1c3d;
+    background: #0a1f44;
     color: white;
     text-align: center;
-    padding: 15px;
-}
-a {
-    color: gold;
-    text-decoration: none;
-}
-button {
-    background-color: gold;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-button:hover {
-    background-color: #d4af37;
+    padding: 20px;
+    font-size: 14px;
 }
 </style>
 </head>
@@ -87,45 +97,76 @@ button:hover {
 
 <header>
     <h1>KSP Manpower Services</h1>
-    <p>Telecom | IT | Non-IT | Infrastructure</p>
+    <p>Reliable Workforce | Strong Partnerships | Sustainable Growth</p>
 </header>
 
-<section>
-    <h2>About Us</h2>
-    <p>We are a trusted recruitment partner providing skilled and reliable manpower solutions across multiple industries.</p>
-</section>
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#why">Why Us</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-<section class="services">
-    <h2>Our Services</h2>
-
-    <div class="service-box">
-        <h3>Permanent Recruitment</h3>
-        <p>End-to-end hiring solutions for long-term roles.</p>
-    </div>
-
-    <div class="service-box">
-        <h3>Contract Staffing</h3>
-        <p>Flexible workforce solutions for short & long-term projects.</p>
-    </div>
-
-    <div class="service-box">
-        <h3>Bulk Hiring</h3>
-        <p>Mass recruitment for telecom, infrastructure & IT sectors.</p>
-    </div>
-</section>
-
-<section class="contact">
-    <h2>Contact Us</h2>
-    <p><strong>Rodhi Ballamudi</strong> – Proprietor</p>
-    <p>📞 +91 9100697339</p>
-    <p>📍 Kokapet, Hyderabad, Telangana - 500075</p>
-    <p>Email: info@kspmanpower.com</p>
+<section class="hero">
+    <h2>Professional Recruitment & Staffing Solutions</h2>
+    <p>Telecom | IT | Non-IT | Infrastructure</p>
     <br>
     <a href="tel:+919100697339"><button>Call Now</button></a>
 </section>
 
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        KSP Manpower Services is a trusted recruitment partner delivering 
+        skilled, verified, and reliable manpower solutions across multiple industries.
+        We support Government projects, Telecom vendors, IT firms, and Infrastructure companies.
+    </p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="box">
+            <h3>Permanent Recruitment</h3>
+            <p>End-to-end hiring solutions for long-term roles.</p>
+        </div>
+        <div class="box">
+            <h3>Contract Staffing</h3>
+            <p>Flexible workforce solutions for short & long-term projects.</p>
+        </div>
+        <div class="box">
+            <h3>Bulk Hiring</h3>
+            <p>Mass recruitment for Telecom, IT & Infra sectors.</p>
+        </div>
+    </div>
+</section>
+
+<section id="why">
+    <h2>Why Choose Us</h2>
+    <div class="why">
+        <div class="box">✔ Quick Turnaround Hiring</div>
+        <div class="box">✔ Skilled & Verified Candidates</div>
+        <div class="box">✔ Payroll & Compliance Support</div>
+        <div class="box">✔ Strong Industry Network</div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Rodhi Ballamudi</strong> – Proprietor</p>
+    <p>📞 +91 9100697339</p>
+    <p>📍 Kokapet, Hyderabad, Telangana - 500075</p>
+    <p>Email: <a href="mailto:info@kspmanpower.com">info@kspmanpower.com</a></p>
+    <br>
+    <a href="https://wa.me/919100697339" target="_blank">
+        <button>Chat on WhatsApp</button>
+    </a>
+</section>
+
 <footer>
-    © 2026 KSP Manpower Services | UDYAM-TS-09-0218119
+    © 2026 KSP Manpower Services | UDYAM-TS-09-0218119 <br>
+    GST No: XXXXXXXX <br>
+    Labour License No: XXXXXXXX
 </footer>
 
 </body>
