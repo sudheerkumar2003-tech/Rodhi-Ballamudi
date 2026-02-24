@@ -3,8 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>KSP Manpower Consultancy | Job Consultancy in Hyderabad</title>
+<title>KSP Manpower Consultancy | Premium Recruitment Agency</title>
 
 <meta name="description" content="KSP Manpower Consultancy in Hyderabad provides professional recruitment and staffing solutions for IT, Telecom & Infrastructure sectors.">
 <meta name="keywords" content="Manpower Consultancy in Hyderabad, Recruitment Agency Hyderabad, IT Hiring Hyderabad">
@@ -14,35 +13,34 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Poppins',sans-serif;background:#f4f7fb;color:#222}
+body{font-family:'Poppins',sans-serif;background:#f4f7fb;color:#222;scroll-behavior:smooth}
 
 /* HEADER */
 header{
 background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-color:#fff;padding:30px;text-align:center;
+color:#fff;
+padding:30px 20px;
+text-align:center;
 }
-.logo-text{
-font-size:34px;
-font-weight:700;
-color:#ffd700;
-letter-spacing:1px;
-}
-.sub-logo{
-font-size:16px;
-font-weight:500;
-margin-top:5px;
-}
+header h1{font-size:34px;font-weight:700;letter-spacing:1px}
+header p{opacity:.9;margin-top:8px}
 
-/* NAV */
+/* NAVBAR */
 nav{
+position:sticky;
+top:0;
 background:#0f2027;
 padding:15px;
 text-align:center;
-position:sticky;top:0;
+z-index:999;
+box-shadow:0 4px 20px rgba(0,0,0,0.2)
 }
 nav a{
-color:#fff;text-decoration:none;margin:0 18px;
+color:#fff;
+text-decoration:none;
+margin:0 18px;
 font-weight:500;
+transition:.3s
 }
 nav a:hover{color:#ffd700}
 
@@ -55,32 +53,75 @@ justify-content:center;
 align-items:center;
 text-align:center;
 color:#fff;
-background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d');
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url('https://images.unsplash.com/photo-1552664730-d307ca884978');
 background-size:cover;
 background-position:center;
 }
-.hero h1{font-size:42px;margin-bottom:20px}
+.hero h2{font-size:45px;margin-bottom:20px}
+.hero p{max-width:600px;margin-bottom:30px;opacity:.9}
 .btn{
 background:linear-gradient(45deg,#ffd700,#ffb700);
-padding:14px 35px;border:none;border-radius:50px;
-font-weight:600;cursor:pointer;
+padding:14px 35px;
+border:none;
+border-radius:50px;
+font-weight:600;
+cursor:pointer;
+transition:.4s
 }
+.btn:hover{transform:scale(1.08)}
 
 /* SECTIONS */
-section{padding:70px 20px;max-width:1100px;margin:auto}
-section h2{text-align:center;margin-bottom:40px;color:#0f2027}
-
-footer{
-background:#0f2027;color:#fff;text-align:center;
-padding:20px;margin-top:60px;
+section{
+padding:90px 20px;
+max-width:1200px;
+margin:auto;
+}
+section h2{
+text-align:center;
+font-size:30px;
+margin-bottom:50px;
+color:#0f2027;
 }
 
-.whatsapp{
-position:fixed;bottom:20px;right:20px;
-background:#25D366;color:#fff;
-padding:15px;border-radius:50%;
-text-decoration:none;font-size:22px;
+/* ABOUT */
+.about{text-align:center;font-size:18px;line-height:1.7;max-width:800px;margin:auto}
+
+/* CARDS */
+.grid{
+display:flex;
+flex-wrap:wrap;
+gap:30px;
+justify-content:center;
+}
+.card{
+flex:1;
+min-width:260px;
+background:#fff;
+padding:30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 40px rgba(0,0,0,0.08);
+transition:.5s
+}
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 50px rgba(0,0,0,0.15)
+}
+
+/* FOOTER */
+footer{
+background:#0f2027;
+color:#fff;
+text-align:center;
+padding:25px;
+margin-top:60px
+}
+
+@media(max-width:768px){
+.hero h2{font-size:30px}
+nav a{margin:0 8px;font-size:14px}
 }
 </style>
 </head>
@@ -88,9 +129,8 @@ text-decoration:none;font-size:22px;
 <body>
 
 <header>
-<div class="logo-text">KSP</div>
-<div class="sub-logo">Manpower Consultancy</div>
-<p>Professional Recruitment & Staffing Solutions</p>
+<h1>KSP Manpower Consultancy</h1>
+<p>Reliable Workforce | Strong Partnerships | Sustainable Growth</p>
 </header>
 
 <nav>
@@ -100,42 +140,42 @@ text-decoration:none;font-size:22px;
 </nav>
 
 <section class="hero">
-<h1>Leading Manpower Consultancy in Hyderabad</h1>
-<a href="tel:+919100697339">
-<button class="btn">Call Now</button>
-</a>
+<h2>Connecting Talent With Opportunity</h2>
+<p>Professional Recruitment & Staffing Solutions for IT, Telecom & Infrastructure Industries Across India</p>
+<a href="tel:+919100697339"><button class="btn">Call Now</button></a>
 </section>
 
 <section id="about">
 <h2>About Us</h2>
-<p style="text-align:center;max-width:800px;margin:auto">
-KSP Manpower Consultancy provides verified workforce solutions for IT, Telecom and Infrastructure sectors across India.
+<p class="about">
+KSP Manpower Consultancy is a trusted recruitment and staffing partner delivering verified, skilled, and project-ready manpower solutions.
+We specialize in permanent recruitment, contract staffing, bulk hiring, and payroll management for corporate sectors.
 </p>
 </section>
 
 <section id="services">
 <h2>Our Services</h2>
-<p style="text-align:center">
-Permanent Recruitment | Contract Staffing | Bulk Hiring | Payroll Support
-</p>
+<div class="grid">
+<div class="card">Permanent Recruitment</div>
+<div class="card">Contract Staffing</div>
+<div class="card">Bulk Hiring Solutions</div>
+<div class="card">Payroll Management</div>
+</div>
 </section>
 
 <section id="contact">
 <h2>Contact Us</h2>
-<p style="text-align:center">
-Rodhi Ballamudi<br>
-📞 +91 9100697339<br>
-📧 Rodhiballamudi@gmail.com<br>
-📍 Kokapet, Hyderabad – 500075<br>
-UDYAM-TS-09-0218119
-</p>
+<div class="about">
+<p><strong>Rodhi Ballamudi</strong></p>
+<p>📞 +91 9100697339</p>
+<p>📍 Kokapet, Hyderabad</p>
+<p>UDYAM-TS-09-0218119</p>
+</div>
 </section>
 
 <footer>
-© 2026 KSP Manpower Consultancy | All Rights Reserved
+© 2026 KSP Manpower Consultancy | UDYAM-TS-09-0218119
 </footer>
-
-<a href="https://wa.me/919100697339" class="whatsapp">💬</a>
 
 </body>
 </html>
