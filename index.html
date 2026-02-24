@@ -4,237 +4,184 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>KSP Manpower Consultancy | Corporate Recruitment Experts</title>
+<title>KSP JOB CONSULTANCY | Job Consultancy in Hyderabad</title>
 
-<meta name="description" content="KSP Manpower Consultancy is a premium recruitment agency in Hyderabad providing IT, Telecom & Infrastructure hiring solutions across India.">
-<meta name="keywords" content="Manpower Consultancy Hyderabad, Recruitment Agency, IT Hiring, Staffing Solutions">
-<meta name="author" content="KSP Manpower Consultancy">
+<meta name="description" content="KSP Job Consultancy in Hyderabad provides professional recruitment and staffing solutions for IT, Telecom & Infrastructure sectors.">
+<meta name="keywords" content="Job Consultancy in Hyderabad, Recruitment Agency Hyderabad, Manpower Consultancy Hyderabad, IT Hiring Hyderabad">
+<meta name="author" content="KSP JOB CONSULTANCY">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Poppins',sans-serif;background:#0b1220;color:#fff;scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;background:#f4f7fb;color:#222}
 
-/* NAVBAR */
-nav{
-position:fixed;
-width:100%;
-top:0;
-left:0;
-padding:18px 50px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:rgba(0,0,0,0.6);
-backdrop-filter:blur(10px);
-z-index:999;
+/* HEADER */
+header{
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:#fff;padding:20px;text-align:center;
 }
-nav h1{
-font-size:22px;
-font-weight:700;
-color:#ffd700;
-letter-spacing:1px;
+.logo{
+width:220px;
+margin-bottom:10px;
+}
+
+/* NAV */
+nav{
+background:#0f2027;
+padding:15px;text-align:center;
+position:sticky;top:0;z-index:999;
 }
 nav a{
-color:#fff;
-text-decoration:none;
-margin-left:25px;
-font-weight:500;
-transition:.3s;
+color:#fff;text-decoration:none;margin:0 18px;
+font-weight:500;transition:.3s;
 }
 nav a:hover{color:#ffd700}
 
 /* HERO */
 .hero{
-height:100vh;
+height:90vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-background:
-linear-gradient(rgba(11,18,32,.85),rgba(11,18,32,.85)),
-url('https://images.unsplash.com/photo-1552664730-d307ca884978');
+color:#fff;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d');
 background-size:cover;
 background-position:center;
-padding:0 20px;
 }
-.hero h2{
-font-size:60px;
-font-weight:800;
-background:linear-gradient(90deg,#ffd700,#ffffff);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-margin-bottom:20px;
-}
-.hero p{
-max-width:700px;
-font-size:18px;
-opacity:.9;
-margin-bottom:40px;
-}
+.hero h1{font-size:48px;margin-bottom:20px}
+.hero p{max-width:600px;margin-bottom:30px}
+
 .btn{
-padding:16px 40px;
-border:none;
-border-radius:50px;
 background:linear-gradient(45deg,#ffd700,#ffb700);
-font-weight:600;
-cursor:pointer;
-transition:.4s;
-}
-.btn:hover{
-transform:scale(1.1);
-box-shadow:0 10px 40px rgba(255,215,0,0.5);
+padding:14px 35px;border:none;border-radius:50px;
+font-weight:600;cursor:pointer;
 }
 
-/* SECTION */
-section{
-padding:120px 20px;
-max-width:1200px;
+section{padding:80px 20px;max-width:1100px;margin:auto}
+section h2{text-align:center;margin-bottom:40px;color:#0f2027}
+
+.grid{display:flex;flex-wrap:wrap;gap:25px;justify-content:center}
+.card{
+flex:1;min-width:250px;background:#fff;padding:30px;
+border-radius:15px;text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+/* FORM */
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+max-width:500px;
 margin:auto;
 }
-section h3{
-text-align:center;
-font-size:36px;
-margin-bottom:70px;
-color:#ffd700;
+form input,form button{
+padding:12px;border-radius:8px;border:1px solid #ccc;
 }
-
-/* GLASS CARDS */
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:40px;
-}
-.card{
-background:rgba(255,255,255,0.05);
-backdrop-filter:blur(15px);
-padding:40px;
-border-radius:20px;
-text-align:center;
-transition:.5s;
-border:1px solid rgba(255,255,255,0.1);
-}
-.card:hover{
-transform:translateY(-15px);
-background:rgba(255,255,255,0.1);
-}
-
-/* CONTACT */
-.contact{
-text-align:center;
-font-size:18px;
-line-height:1.8;
+form button{
+background:#0f2027;color:#fff;border:none;
+cursor:pointer;
 }
 
 /* FOOTER */
 footer{
-background:#050a14;
-text-align:center;
-padding:30px;
-font-size:14px;
-opacity:.8;
+background:#0f2027;color:#fff;text-align:center;
+padding:20px;margin-top:60px;
 }
 
-/* WHATSAPP */
+/* WhatsApp */
 .whatsapp{
-position:fixed;
-bottom:25px;
-right:25px;
-background:#25D366;
-color:#fff;
-padding:18px;
-border-radius:50%;
-font-size:22px;
-text-decoration:none;
-box-shadow:0 10px 30px rgba(0,0,0,.5);
+position:fixed;bottom:20px;right:20px;
+background:#25D366;color:#fff;
+padding:15px;border-radius:50%;
+text-decoration:none;font-size:22px;
 }
 
-/* RESPONSIVE */
 @media(max-width:768px){
-.hero h2{font-size:35px}
-nav{padding:15px 20px}
-nav a{margin-left:15px;font-size:14px}
+.hero h1{font-size:28px}
 }
 </style>
 </head>
 
 <body>
 
-<<a href="#clients">Clients</a>>
-<h1>KSP Manpower Consultancy</h1>
-<div>
+<header>
+<img src="logo.png" class="logo" alt="KSP JOB CONSULTANCY Logo">
+<h2>KSP JOB CONSULTANCY</h2>
+<p>Professional Recruitment & Staffing Solutions</p>
+</header>
+
+<nav>
 <a href="#about">About</a>
-<a href="#services">Services</a><section id="clients">
-<h2>Our Clients</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>ABC Infra Pvt Ltd</h3>
-<p>Telecom Infrastructure Projects</p>
-</div>
-
-<div class="card">
-<h3>XYZ IT Solutions</h3>
-<p>IT Staffing & Development Hiring</p>
-</div>
-
-<div class="card">
-<h3>Metro Engineering Services</h3>
-<p>Bulk Technical Recruitment</p>
-</div>
-
-<div class="card">
-<h3>National Network Projects</h3>
-<p>PAN India Workforce Deployment</p>
-</div>
-
-</div>
-</section>
+<a href="#services">Services</a>
+<a href="#apply">Apply</a>
 <a href="#contact">Contact</a>
-</div>
 </nav>
 
 <section class="hero">
-<h2>Premium Recruitment Solutions</h2>
-<p>Connecting Top Talent With Leading Companies Across IT, Telecom & Infrastructure Industries.</p>
-<a href="tel:+919100697339">
-<button class="btn">Contact Us</button>
-</a>
+<h1>Connecting Talent With Opportunity</h1>
+<p>Leading Job Consultancy in Hyderabad for IT, Telecom & Infrastructure Hiring</p>
+<a href="tel:+919100697339"><button class="btn">Call Now</button></a>
 </section>
 
 <section id="about">
-<h3>About Us</h3>
-<div class="card">
-KSP Manpower Consultancy is a trusted corporate recruitment partner delivering verified, skilled and project-ready professionals across India. 
-We specialize in permanent hiring, contract staffing and workforce solutions for growing enterprises.
-</div>
+<h2>About Us</h2>
+<p style="text-align:center;max-width:800px;margin:auto">
+KSP JOB CONSULTANCY is a Hyderabad based recruitment agency providing verified workforce solutions for IT, Telecom and Infrastructure companies across India.
+</p>
 </section>
 
 <section id="services">
-<h3>Our Services</h3>
+<h2>Our Services</h2>
 <div class="grid">
 <div class="card">Permanent Recruitment</div>
 <div class="card">Contract Staffing</div>
-<div class="card">Bulk Hiring Solutions</div>
-<div class="card">Payroll Management</div>
+<div class="card">Bulk Hiring</div>
+<div class="card">Payroll Support</div>
 </div>
+</section>
+
+<section id="apply">
+<h2>Apply for Job</h2>
+
+<form name="job-application" method="POST" data-netlify="true" enctype="multipart/form-data">
+<input type="hidden" name="form-name" value="job-application">
+
+<input type="text" name="name" placeholder="Full Name" required>
+<input type="email" name="email" placeholder="Email" required>
+<input type="tel" name="phone" placeholder="Phone Number" required>
+<input type="file" name="resume" required>
+
+<button type="submit">Submit Application</button>
+</form>
 </section>
 
 <section id="contact">
-<h3>Contact Us</h3>
-<div class="contact">
-<p><strong>Rodhi Ballamudi</strong></p>
-<p>📞 +91 9100697339</p>
-<p>📍 Kokapet, Hyderabad</p>
-<p>UDYAM-TS-09-0218119</p>
-</div>
+<h2>Contact Us</h2>
+<p style="text-align:center">
+Rodhi Ballamudi<br>
+📞 +91 9100697339<br>
+📧 Rodhiballamudi@gmail.com<br>
+📍 Kokapet, Hyderabad – 500075<br>
+UDYAM-TS-09-0218119
+</p>
+
+<br>
+
+<iframe 
+src="https://www.google.com/maps?q=Kokapet,Hyderabad&output=embed"
+width="100%" height="250" style="border:0;border-radius:15px;" 
+loading="lazy">
+</iframe>
+
 </section>
 
 <footer>
-© 2026 KSP Manpower Consultancy | All Rights Reserved
+© 2026 KSP JOB CONSULTANCY | All Rights Reserved
 </footer>
 
 <a href="https://wa.me/919100697339" class="whatsapp">💬</a>
